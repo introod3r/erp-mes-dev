@@ -1,0 +1,32 @@
+{
+  "name": "metal-fittings-erp-mes-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test:sql": "./scripts/run-local-supabase-tests.sh",
+    "db:push:remote": "./scripts/apply-remote-migrations.sh",
+    "test:remote": "./scripts/run-remote-supabase-tests.sh",
+    "git:setup-remote": "./scripts/setup-github-remote.sh"
+  },
+  "dependencies": {
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
